@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body {
             width: 100%;
@@ -16,17 +16,43 @@
             box-sizing: border-box;
             -moz-box-sizing: border-box;
         }
+        h1,h2,h3,p{
+            margin:0;
+            padding:0;
+        }
+        .clearfix:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .contact{
+        }
+        .name {
+            margin:1mm 3mm;
+            text-align: left;
+        }
+        .phone{
+            margin: 0.5mm 3mm;
+            float:left;
+        }
+        .email{
+            margin: 0.5mm 3mm;
+            float:left;
+        }
+
         .page {
             width: 210mm;
             min-height: 297mm;
-            padding: 20mm;
+            padding: 10mm;
             margin: 10mm auto;
-            background-color: #BBBBBB;
             text-align: center;
+            border-style: solid;
+            border-color: black;
+            font-family: 'Montserrat', sans-serif;
         }
         .subpage {
             padding: 1cm;
-            height: 257mm;
+            height: 27mm;
         }
         
         @page {
@@ -53,7 +79,13 @@
   </head>
   <body>
     <div class="page">
-        Hello
+        <div class="header">
+            <h1 class="name">Sunwook Kim</h1>
+            <div class="contact clearfix">
+                <p class="phone clearfix">Phone:010-xxxx-xxxx</p><p class="email clearfix">Email: sunwook@temp.edu</p>
+            </div>
+        </div>
+
     </div>
   </body>
 </html>
