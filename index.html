@@ -19,27 +19,31 @@
         h1,h2,h3,p{
             margin:0;
             padding:0;
+            font-weight: normal;
         }
-        .clearfix:after {
+                .clearfix:after {
           content: "";
           clear: both;
           display: table;
         }
         .contact{
+            color: gray;
+        }
+        .header{
+
         }
         .name {
-            margin:1mm 3mm;
+            font-size: 3em;
+            font-weight: normal;
             text-align: left;
         }
         .phone{
-            margin: 0.5mm 3mm;
             float:left;
         }
         .email{
-            margin: 0.5mm 3mm;
+            margin-left: 2mm;
             float:left;
         }
-
         .page {
             width: 210mm;
             min-height: 297mm;
@@ -54,7 +58,19 @@
             padding: 1cm;
             height: 27mm;
         }
-        
+        table{
+            margin-top:3mm;
+        }
+        table, tr, th, td {
+            padding:3mm;
+            border-style:solid;
+            border-collapse: collapse;
+            border-width: 0.5mm;
+            border-color:gray;
+        }
+        tr{
+            padding:3mm;
+        }
         @page {
             size: A4;
             margin: 0;
@@ -82,9 +98,20 @@
         <div class="header">
             <h1 class="name">Sunwook Kim</h1>
             <div class="contact clearfix">
-                <p class="phone clearfix">Phone:010-xxxx-xxxx</p><p class="email clearfix">Email: sunwook@temp.edu</p>
+                <p class="phone clearfix">Phone 010-xxxx-xxxx</p><p class="email clearfix">Email sunwook@temp.edu</p>
             </div>
         </div>
+        <table>
+            <tr>
+                <th rowspan="2"><h1 class="category">Academics</h1></th>
+                <td><h1>Cornell University</h1>
+                <p>Hi</p></td>
+            </tr>
+            <tr><td>Korea Science Academy of KAIST</td></tr>
+            <tr>
+                <th><h1 class="category">Experience</h1></th>
+                <td>Cornell IT Department</td>
+            </tr>
 
     </div>
   </body>
