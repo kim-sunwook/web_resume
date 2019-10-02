@@ -67,7 +67,7 @@
             float:left;
         }
         .main-table{
-            width:90%;
+            width:96%;
             margin-top: 3mm;
             border-spacing: 0;
         }
@@ -75,16 +75,16 @@
             vertical-align: middle;
             text-align: left;
         }
-        .main-table tr :nth-child(1){
+        .main-table tr > :nth-child(1){
             width:30%;
             border-right: solid gray;
         }
         .main-table tr :nth-child(2){
-            width:45%;
+            width:48%;
             padding-left: 2mm;
         }
         .title tr{
-            height: 10mm;
+            height: 8mm;
         }
         .title td br{
             line-height: 0;
@@ -100,19 +100,27 @@
             font-weight: 600;
         }
         .title :nth-child(3){
-            font-size: 0.8em;
+            font-size: 0.72em;  
             text-align: right;
         }
-        .subtitle tr{
+        .subtitle {
+            font-size: 0.72em;
+        }
+        .subtitle {
             height:5mm;
         }
         .subtitle :nth-child(2){
-            font-size: 0.8em;
+            padding-left: 1mm;
         }
         .subtitle :nth-child(3){
-            font-size: 0.8em;
             text-align: right;
         }
+        .description {
+            height: 6mm;
+            font-size:0.8em;
+        }
+        .description_text{
+            padding-left: 2.5mm;
         }
         @page {
             size: A4;
@@ -152,17 +160,17 @@
             </tr>
             <tr class="subtitle">
                 <th></th>
-                <td>Rising Junior</td>
+                <td>Computer Science Major / Rising Junior</td>
                 <td>August 2016 ~ Present</td>
             </tr>
-            <tr class="title">
+            <tr class="description">
                 <td></td>
-                <td>.</td>
+                <td><div class="description_text">GPA: 4.1/4.3</div></td>
                 <td></td>
             </tr>
-            <tr class="title">
+            <tr class="description">
                 <td></td>
-                <td>.</td>
+                <td><div class="description_text">Dean's List for all enrolled semsesters</div></td>
                 <td></td>
             </tr>
             <tr class="title">
