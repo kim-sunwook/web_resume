@@ -66,22 +66,40 @@
             margin-left: 2mm;
             float:left;
         }
-        .main-table{
+        .main-block{
+            display:flex;
             width:96%;
             margin-top: 3mm;
+        }
+
+        .main-block_category{
+            width:30%;
+            padding-right: 3mm;
+            border-right: solid gray;
+        }
+        .main-block_category > p{
+            font-size: 2em;
+            font-weight: bold;
+            text-align:right;
+        }
+        .main-block_content{
+            padding-left: 4mm;
+            float:left;
+            width:70%;
+        }
+        .main-block_content_table{
+            width:96%;
             border-spacing: 0;
         }
-        .main-table *{
+        .main-block_content_table *{
             vertical-align: middle;
             text-align: left;
         }
-        .main-table tr > :nth-child(1){
-            width:30%;
-            border-right: solid gray;
+        .main-block_content_table tr > :nth-child(1){
+            width:50%;
         }
-        .main-table tr :nth-child(2){
+        .main-block_content_table tr :nth-child(2){
             width:48%;
-            padding-left: 2mm;
         }
         .title tr{
             height: 8mm;
@@ -90,34 +108,28 @@
             line-height: 0;
         }
         .title :nth-child(1){
-            padding-left: 0;
-            text-align: left;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        .title :nth-child(2){
             font-size: 1.3em;
             font-weight: 600;
         }
-        .title :nth-child(3){
+        .title :nth-child(2){
             font-size: 0.72em;  
             text-align: right;
         }
         .subtitle {
-            font-size: 0.72em;
+            height: 6mm;
         }
-        .subtitle {
-            height:5mm;
+        .subtitle :nth-child(1){
+            font-size: 1em;
+            color: gray;
         }
         .subtitle :nth-child(2){
-            padding-left: 1mm;
-        }
-        .subtitle :nth-child(3){
+            font-size:0.72em;
             text-align: right;
         }
         .description {
-            height: 6mm;
+            height: 0.7mm;
             font-size:0.8em;
+            font-weight: 6  00;
         }
         .description_text{
             padding-left: 2.5mm;
@@ -152,73 +164,28 @@
                 <p class="phone clearfix">Phone 010-xxxx-xxxx</p><p class="email clearfix">Email sunwook@temp.edu</p>
             </div>
         </div>
-        <table class="main-table">
-            <tr class="title">
-                <th>Academics</th>
-                <td>Cornell University</td>
-                <td>Ithaca, NY</td>
-            </tr>
-            <tr class="subtitle">
-                <th></th>
-                <td>Computer Science Major / Rising Junior</td>
-                <td>August 2016 ~ Present</td>
-            </tr>
-            <tr class="description">
-                <td></td>
-                <td><div class="description_text">GPA: 4.1/4.3</div></td>
-                <td></td>
-            </tr>
-            <tr class="description">
-                <td></td>
-                <td><div class="description_text">Dean's List for all enrolled semsesters</div></td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <th></th>
-                <td>Korea Science Academy<br>of KAIST</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <th>Experience</th>
-                <td>Cornell IT Department</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-            <tr class="title">
-                <td></td>
-                <td>.</td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="main-block clearfix">
+            <div class="main-block_category">
+                <p>Academics</p>
+            </div>
+            <div class="main-block_content">
+                <table class="main-block_content_table">
+                    <tr class="title">
+                        <td>Cornell University</td>
+                        <td>Ithaca, NY</td>
+                    </tr>
+                    <tr class="subtitle">
+                        <td>Rising Junior</td>
+                        <td>August 2016 ~ Present</td>
+                    </tr>
+                    <tr class="description">
+                        <td colspan="2"><div class="description_text">GPA: 4.1/4.3</div></td>
+                    </tr>
+                    <tr class="description">
+                        <td colspan="2"><div class="description_text">Dean's list for all enrolled semesters</div></td>
+                    </tr>
+            </div>
+        </div>
     </div>
   </body>
 </html>
