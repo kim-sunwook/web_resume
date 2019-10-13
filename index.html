@@ -101,7 +101,9 @@
         .main-block_content_table tr > :nth-child(1){
         }
         .title tr{
-            height: 8mm;
+        }
+        .title td{
+            height: 7.5mm;
         }
         .title td br{
             line-height: 0;
@@ -114,8 +116,8 @@
             font-size: 0.72em;
             text-align: right;
         }
-        .subtitle {
-            height: 6mm;
+        .subtitle td{
+            height: 7.5mm;
         }
         .subtitle :nth-child(1){
             white-space: nowrap;
@@ -128,11 +130,28 @@
             text-align: right;
         }
         .description {
-            height: 5mm;
             font-size:0.8em;
         }
         .description_text{
             padding-left: 2.5mm;
+            line-height: 1.45;
+        }
+        .bottom-block{
+            margin-top:9mm;
+            display: flex;
+            justify-content: space-between;
+            width: 96%;
+        }
+        .bottom-block_skill-box{            
+            width: 48%;
+            background: rgba(255,0,0,0.1)
+        }
+        .bottom-block_skill-box_title{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        hr.hr--gray{
+            border: 1.5px solid gray;
         }
         @page {
             size: A4;
@@ -187,6 +206,9 @@
                     <tr class="description">
                         <td class="description_text">Major Course Work: Linear Algebra, Introduction to Analysis of Algorithms, Basic Probability</td>
                     </tr>
+                    <tr class="description">
+                        <td colspan="2" class="description_text">&nbsp;</td>
+                    </tr>
                     <tr class="title">
                         <td>Korea Science Academy <br/>of KAIST</td>
                         <td>Busan, South Korea</td>
@@ -195,6 +217,9 @@
                         <td>High School</td>
                         <td>February 2013 ~ February 2016</td>
                     </tr>
+                    <tr class="description">
+                        <td colspan="2" class="description_text">&nbsp;</td>
+                    </tr>                                        
                 </table>
             </div>
         </div>
@@ -218,6 +243,9 @@
                     <tr class="description">
                         <td colspan="2" class="description_text">Something</td>
                     </tr>
+                    <tr class="description">
+                        <td colspan="2" class="description_text">&nbsp;</td>
+                    </tr>
                     <tr class="title">
                         <td>Republic of Korea Army</td>
                         <td>South Korea</td>
@@ -226,7 +254,20 @@
                         <td>Army</td>
                         <td>October 2018 ~ Present</td>
                     </tr>
+                    <tr class="description">
+                        <td class="description_text">Created amazing stuffs, seen things that cannot be unseen. Grandious and pompose whatever that will lead me to transendence, and hopefully, a good job.</td>
+                    </tr>
                 </table>
+            </div>
+        </div>
+        <div class="bottom-block">
+            <div class="bottom-block_skill-box">
+                <p class="bottom-block_skill-box_title">Programming Skills</p>
+                <hr class="hr--gray">
+            </div>
+            <div class="bottom-block_skill-box">
+                <p class="bottom-block_skill-box_title">Skills</p>   
+                <hr class="hr--gray">
             </div>
         </div>
     </div>
