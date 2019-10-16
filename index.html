@@ -1,298 +1,118 @@
 <!--https://coolutony.github.io/resume/-->
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        /* { background-color: rgba(255,0,0,.2); }
-        * * { background-color: rgba(0,255,0,.2); }
-        * * * { background-color: rgba(0,0,255,.2); }
-        * * * * { background-color: rgba(255,0,255,.2); }
-        * * * * * { background-color: rgba(0,255,255,.2); }
-        * * * * * * { background-color: rgba(255,255,0,.2); }
-        * * * * * * * { background-color: rgba(255,0,0,.2); }
-        * * * * * * * * { background-color: rgba(0,255,0,.2); }
-        * * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        * {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            margin:0;
-            padding:0;
-        }
-        .page {
-            width: 210mm;
-            min-height: 297mm;
-            padding: 10mm;
-            margin: 10mm auto;
-            text-align: center;
-            border-style: solid;
-            border-color: black;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .subpage {
-            padding: 1cm;
-            height: 27mm;
-        }
-        h1,h2,h3,p{
-            margin:0;
-            padding:0;
-            font-weight: normal;
-        }
-        .clearfix:after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        .header{
-        }
-        .name {
-            font-size: 3em;
-            font-weight: bold;
-            text-align: left;
-        }
-        .contact{
-            color: gray;
-        }
-        .phone{
-            float:left;
-        }
-        .email{
-            margin-left: 2mm;
-            float:left;
-        }
-        .main-block{
-            display:flex;
-            width:96%;
-            margin-top: 3mm;
-        }
-        .main-block_category{
-            width:30%;
-            padding-right: 3mm;
-            border-right: solid gray;
-        }
-        .main-block_category > p{
-            font-size: 2em;
-            font-weight: bold;
-            text-align:right;
-        }
-        .main-block_content{
-            padding-left: 4mm;
-            float:left;
-            width:70%;
-        }
-        .main-block_content_table{
-            border-spacing: 0;
-            width:100%;
-        }
-        .main-block_content_table *{
-            text-align: left;
-        }
-        .main-block_content_table tr td {
-            vertical-align: middle;
-        }
-        .main-block_content_table tr > :nth-child(1){
-        }
-        .title tr{
-        }
-        .title td{
-            height: 7.5mm;
-        }
-        .title td br{
-            line-height: 0;
-        }
-        .title :nth-child(1){
-            font-size: 1.3em;
-            font-weight: 600;
-        }
-        .title :nth-child(2){
-            font-size: 0.72em;
-            text-align: right;
-        }
-        .subtitle td{
-            height: 7.5mm;
-        }
-        .subtitle :nth-child(1){
-            white-space: nowrap;
-            font-size: 1em;
-            color: gray;
-        }
-        .subtitle :nth-child(2){
-            white-space: nowrap;  
-            font-size:0.72em;
-            text-align: right;
-        }
-        .description {
-            font-size:0.8em;
-        }
-        .description_text{
-            padding-left: 2.5mm;
-            line-height: 1.45;
-        }
-        .bottom-block{
-            margin-top:9mm;
-            display: flex;
-            justify-content: space-between;
-            width: 96%;
-        }
-        .bottom-block_skill-box{            
-            width: 48%;
-        }
-        .bottom-block_skill-box_title{
-            font-size: 2em;
-            font-weight: bold;
-        }
-        hr.hr--gray{
-            border: 1.5px solid gray;
-        }
-        .bottom-block_skill-box_table{
-            width: 100%;
-        }
-        .bottom-block_skill-box_table tr :nth-child(1){
-            width:30%;
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <h1 class="name">Sunwook Kim</h1>
+                <div class="contact clearfix">
+                    <p class="phone clearfix">Phone 010-xxxx-xxxx</p><p class="email clearfix">Email sunwook@temp.edu</p>
+                </div>
+            </div>
+            <div class="main-block">
+                <div class="main-block_category">
+                    <p>Academics</p>
+                </div>
+                <div class="main-block_content">
+                    <table class="main-block_content_table">
+                        <tr class="title">
+                            <td>Cornell University</td>
+                            <td>Ithaca, NY</td>
+                        </tr>
+                        <tr class="subtitle">
+                            <td>Computer Science/ Rising Junior</td>
+                            <td>August 2016 ~ Present</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">GPA: 4.1/4.3</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">Dean's list for all enrolled semesters</td>
+                        </tr>
+                        <tr class="description">
+                            <td class="description_text">Major Course Work: Linear Algebra, Introduction to Analysis of Algorithms, Basic Probability</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">&nbsp;</td>
+                        </tr>
+                        <tr class="title">
+                            <td>Korea Science Academy <br/>of KAIST</td>
+                            <td>Busan, South Korea</td>
+                        </tr>
+                        <tr class="subtitle">
+                            <td>High School</td>
+                            <td>February 2013 ~ February 2016</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">&nbsp;</td>
+                        </tr>                                        
+                    </table>
+                </div>
+            </div>
+            <div class="main-block">
+                <div class="main-block_category">
+                    <p>Experience</p>
+                </div>
+                <div class="main-block_content">
+                    <table class="main-block_content_table">
+                        <tr class="title">
+                            <td>Cornell IT Department</td>
+                            <td>Ithaca, NY</td>
+                        </tr>
+                        <tr class="subtitle">
+                            <td>Systems Engineering</td>
+                            <td>May 2017 ~ August 2017</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">Nailed it</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">Something</td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2" class="description_text">&nbsp;</td>
+                        </tr>
+                        <tr class="title">
+                            <td>Republic of Korea Army</td>
+                            <td>South Korea</td>
+                        </tr>
+                        <tr class="subtitle">
+                            <td>Army</td>
+                            <td>October 2018 ~ Present</td>
+                        </tr>
+                        <tr class="description">
+                            <td class="description_text">Created amazing stuffs, seen things that cannot be unseen. Grandious and pompose whatever that will lead me to transendence, and hopefully, a good job.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="bottom-block">
+                <div class="bottom-block_skill-box">
+                    <p class="bottom-block_skill-box_title">Programming Skills</p>
+                    <hr class="hr--gray">
+                    <table class=bottom-block_skill-box_table>
+                        <tr>
+                            <td class="language-title">Java</td>
+                            <td class="language-description">Able to create my own code, edit others.</td>
+                        </tr>
+                        <tr>
+                            <td class="language-title">Python</td>
+                            <td class="language-description">Main language used in job at the Army. Used minimal PyQt, numpy</td>
+                        </tr>
 
-        }
-        .language-title{
-            font-size: 1em;
-        }
-        .language-description{
-            font-size:0.8em;
-        }
-        @page {
-            size: A4;
-            margin: 0;
-        }
-        @media print {
-            html, body {
-                width: 210mm;
-                height: 297mm;        
-            }
-            .page {
-                margin: 0;
-                border: initial;
-                border-radius: initial;
-                width: initial;
-                min-height: initial;
-                box-shadow: initial;
-                background: initial;
-                page-break-after: always;
-            }
-        }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-        <div class="header">
-            <h1 class="name">Sunwook Kim</h1>
-            <div class="contact clearfix">
-                <p class="phone clearfix">Phone 010-xxxx-xxxx</p><p class="email clearfix">Email sunwook@temp.edu</p>
+                    </table>
+                </div>
+                <div class="bottom-block_skill-box">
+                    <p class="bottom-block_skill-box_title">Skills</p>   
+                    <hr class="hr--gray">
+                </div>
             </div>
         </div>
-        <div class="main-block">
-            <div class="main-block_category">
-                <p>Academics</p>
-            </div>
-            <div class="main-block_content">
-                <table class="main-block_content_table">
-                    <tr class="title">
-                        <td>Cornell University</td>
-                        <td>Ithaca, NY</td>
-                    </tr>
-                    <tr class="subtitle">
-                        <td>Computer Science/ Rising Junior</td>
-                        <td>August 2016 ~ Present</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">GPA: 4.1/4.3</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">Dean's list for all enrolled semesters</td>
-                    </tr>
-                    <tr class="description">
-                        <td class="description_text">Major Course Work: Linear Algebra, Introduction to Analysis of Algorithms, Basic Probability</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">&nbsp;</td>
-                    </tr>
-                    <tr class="title">
-                        <td>Korea Science Academy <br/>of KAIST</td>
-                        <td>Busan, South Korea</td>
-                    </tr>
-                    <tr class="subtitle">
-                        <td>High School</td>
-                        <td>February 2013 ~ February 2016</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">&nbsp;</td>
-                    </tr>                                        
-                </table>
-            </div>
-        </div>
-        <div class="main-block">
-            <div class="main-block_category">
-                <p>Experience</p>
-            </div>
-            <div class="main-block_content">
-                <table class="main-block_content_table">
-                    <tr class="title">
-                        <td>Cornell IT Department</td>
-                        <td>Ithaca, NY</td>
-                    </tr>
-                    <tr class="subtitle">
-                        <td>Systems Engineering</td>
-                        <td>May 2017 ~ August 2017</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">Nailed it</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">Something</td>
-                    </tr>
-                    <tr class="description">
-                        <td colspan="2" class="description_text">&nbsp;</td>
-                    </tr>
-                    <tr class="title">
-                        <td>Republic of Korea Army</td>
-                        <td>South Korea</td>
-                    </tr>
-                    <tr class="subtitle">
-                        <td>Army</td>
-                        <td>October 2018 ~ Present</td>
-                    </tr>
-                    <tr class="description">
-                        <td class="description_text">Created amazing stuffs, seen things that cannot be unseen. Grandious and pompose whatever that will lead me to transendence, and hopefully, a good job.</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="bottom-block">
-            <div class="bottom-block_skill-box">
-                <p class="bottom-block_skill-box_title">Programming Skills</p>
-                <hr class="hr--gray">
-                <table class=bottom-block_skill-box_table>
-                    <tr>
-                        <td class="language-title">Java</td>
-                        <td class="language-description">Able to create my own code, edit others.</td>
-                    </tr>
-                    <tr>
-                        <td class="language-title">Python</td>
-                        <td class="language-description">Main language used in job at the Army. Used minimal PyQt, numpy</td>
-                    </tr>
-
-                </table>
-            </div>
-            <div class="bottom-block_skill-box">
-                <p class="bottom-block_skill-box_title">Skills</p>   
-                <hr class="hr--gray">
-            </div>
-        </div>
-    </div>
-  </body>
+    </body>
 </html>
