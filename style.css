@@ -67,14 +67,14 @@ h1,h2,h3,p{
     margin-top: 3mm;
 }
 .main-block_category{
-    width:30%;
+    width:28%;
     padding-right: 3mm;
     border-right: solid gray;
 }
 .main-block_category > p{
     font-size: 2em;
     font-weight: bold;
-    text-align:right;
+    text-align:left;
 }
 .main-block_content{
     padding-left: 4mm;
@@ -141,21 +141,30 @@ h1,h2,h3,p{
 .bottom-block_skill-box_title{
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 2mm;
 }
 hr.hr--gray{
     border: 1.5px solid gray;
 }
 .bottom-block_skill-box_table{
+    margin-top: 2mm;
     width: 100%;
+}
+.bottom-block_skill-box_table tr {
+    height: 10mm;
 }
 .bottom-block_skill-box_table tr :nth-child(1){
     width:30%;
 
 }
 .language-title{
+    text-align: left;
     font-size: 1em;
+    font-weight: bold;
 }
 .language-description{
+    text-align: left;
+    line-height: 1.45;
     font-size:0.8em;
 }
 @page {
