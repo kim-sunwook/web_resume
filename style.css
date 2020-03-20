@@ -134,7 +134,7 @@ h1,h2,h3,p{
 }
 .description_text:before{
     content:"\0026AB";
-    font-size: 0.5em;
+    font-size: 0.4em;
     padding-right: 5px;                                        
     vertical-align: middle;
 }
