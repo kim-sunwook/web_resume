@@ -129,8 +129,14 @@ h1,h2,h3,p{
     font-size:0.8em;
 }
 .description_text{
-    padding-left: 2.5mm;
+    vertical-align: middle;
     line-height: 1.5;
+}
+.description_text:before{
+    content:"\0026AB";
+    font-size: 0.5em;
+    padding-right: 5px;                                        
+    vertical-align: middle;
 }
 .bottom-block{
     margin-top:9mm;
