@@ -57,10 +57,10 @@ h1,h2,h3,p{
     margin-top: 1mm;
     color: gray;
 }
-.phone{
+.contact_info-first{
     float:left;
 }
-.email{
+.contact_info{
     margin-left: 2mm;
     float:left;
 }
