@@ -133,8 +133,8 @@ h1,h2,h3,p{
     line-height: 1.5;
 }
 .description_text:before{
-    content:"\0026AB";
-    font-size: 0.4em;
+    content:"•";
+    font-size:1em;
     padding-right: 5px;                                        
     vertical-align: middle;
 }
