@@ -145,7 +145,7 @@ h1,h2,h3,p{
     width: 96%;
 }
 .bottom-block_skill-box{            
-    width: 48%;
+    width: 96%;
 }
 .bottom-block_skill-box_title{
     font-size: 2em;
@@ -163,7 +163,7 @@ hr.hr--gray{
     height: 10mm;
 }
 .bottom-block_skill-box_table tr :nth-child(1){
-    width:30%;
+    width:20%;
 
 }
 .language-title{
