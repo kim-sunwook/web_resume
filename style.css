@@ -163,7 +163,7 @@ hr.hr--gray{
     height: 10mm;
 }
 .bottom-block_skill-box_table tr :nth-child(1){
-    width:20%;
+    width:16%;
 
 }
 .language-title{
@@ -175,6 +175,13 @@ hr.hr--gray{
     text-align: left;
     line-height: 1.5;
     font-size:0.8em;
+}
+.footer{
+    position:absolute;
+    bottom: -180px;
+    text-align: left;
+    font-size: 0.5em;
+    color:gray;
 }
 @page {
     size: A4;
